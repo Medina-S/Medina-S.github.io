@@ -17,6 +17,65 @@ header {
     background-color: rgba(71, 71, 71, 0.418);
 }
 
+.navbar{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    background-color: rgba(211, 211, 211, 0.274);
+    height: 75px;
+    color: white;
+    z-index: 15;
+    border-top: solid .5px darkgray
+}
+.menu_options {
+    list-style-type: none;
+    position: fixed;
+    top: 120px;
+    width: 100%;
+    /* margin-top: 15px; */
+    /* margin-left: 150px; */
+    /* padding-left: 450px; */
+    z-index: 30;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    margin: 0 50px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    /* background-color: purple; */
+    text-decoration: underline purple;
+}
+.navOptions {
+    float: left;
+    color:white;
+    font-family:'Sofia Pro', serif;
+    font-size: 18px;
+    font-weight:700;
+    padding-right:35px;
+    text-decoration:unset;
+    z-index: 30;
+}
+
+.label{
+    cursor:default
+}
 .second_big-image {
     height: 100vh;
     background-repeat: no-repeat;
@@ -29,8 +88,22 @@ header {
     margin-left: 50px;
 }
     .login_button {
-        margin-right: 50px;
+        margin: 20px 50px;
         color: white;
+        appearance: button;
+        width: 125px;
+        height: 35px;
+        border-radius: 10px;
+        background-color: #6B63B5;
+        font-family: 'Sofia Pro', serif;
+        font-weight: 400;
+        font-size: 18px;
+        border: none;
+        letter-spacing: 2px;
+        z-index: 10;
+        text-align: center;
+        align-items: center;
+        padding-top: 10px;
     }
     
     #logo {
@@ -65,14 +138,94 @@ header {
 
 .pics {
     width: 250px;
+    z-index: 0;
 }
 
 .section2 {
     background-image: url(https://www.wallpaperflare.com/static/519/649/301/british-columbia-canada-clear-lake-wallpaper.jpg);
     background-position: cover;
     height: 100vh;
+    padding-top: 100px;
 }
 
 .rowwrapper {
     display: flex;
+}
+
+.logowrapper {
+    width: 1080px;
+    background-color: rgba(128, 128, 128, 0.637);
+    margin: 0 450px;
+    /* margin-right: auto; */
+    padding: 10px;
+    border-radius: 15px;
+
+
+}
+
+
+.hptoplogo {
+    /* width: 50%; */
+}
+
+#buttonWrapper{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.find-button {
+    background-color:  #6B63B5;
+    height: 50px;
+    width: 300px;
+    font-weight: bold;
+    font-family: 'Sofia Pro', serif;
+    font-size: 14pt;
+    color: white;
+    letter-spacing: normal;
+    text-align: center;
+    padding: 1px 6px;
+    border-radius: 30px;
+}
+
+.Title {
+    text-align: center;
+    color: white;
+    font-size: 50pt;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(128, 128, 128, 0.637);
+
+}
+
+.Subtitle {
+    text-align:center;
+    color: white;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(128, 128, 128, 0.637);
+
+}
+
+.feature1{
+    color: white
+    
+}
+
+.txt1{
+    color: white;
+    font-size: 16pt;
+}
+
+hr {
+   width: 70%;
+   height: 1px;
+   color: lightgray;
+   margin-top: 50px;
+}
+.image2{
+    margin-left: 900px;
+    margin-top: 100px;
 }
