@@ -113,10 +113,10 @@ li a:hover {
 }
 
 .column {
-    padding: 15px 15px 0 15px;
+    padding: 0 15px 0 15px;
     height: 50%;
     flex:1;
-    margin: 20px 20px 0 20px;
+    margin: 0 20px 0 20px;
     align-items: center;
     
 }
@@ -133,6 +133,7 @@ li a:hover {
     position: relative;
     /* bottom: 0; */
     align-self: flex-end;
+    /* top: 20px; */
 
 }
 
@@ -150,6 +151,7 @@ li a:hover {
 
 .rowwrapper {
     display: flex;
+    margin-left: 300px;
 }
 
 .logowrapper {
@@ -159,14 +161,12 @@ li a:hover {
     /* margin-right: auto; */
     padding: 10px;
     border-radius: 15px;
-
-
 }
 
 
-.hptoplogo {
+/* .hptoplogo {
     /* width: 50%; */
-}
+/* } */ */
 
 #buttonWrapper{
     margin: 0 auto;
@@ -175,17 +175,24 @@ li a:hover {
     justify-content: center;
 }
 .find-button {
+    text-align:center;
+    align-content: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
     background-color:  #6B63B5;
     height: 50px;
     width: 300px;
+    text-transform: uppercase;
     font-weight: bold;
     font-family: 'Sofia Pro', serif;
     font-size: 14pt;
     color: white;
-    letter-spacing: normal;
-    text-align: center;
+    letter-spacing: 1.5px;
     padding: 1px 6px;
     border-radius: 30px;
+
 }
 
 .Title {
@@ -228,4 +235,101 @@ hr {
 .image2{
     margin-left: 900px;
     margin-top: 100px;
+    position: absolute;
 }
+
+.diamond-box {
+    margin-top: 20px;
+    margin-bottom: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 24px;
+    align-content: center;
+}
+
+#diamond1 {
+    z-index: 3;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    position: relative;
+    border: solid 2.5px white;
+    align-content: center;
+    background-color: transparent;
+    animation-name: diamond1;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+#diamond1::before {
+    content:"";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    align-content: center;
+    top:5px;
+    border: solid 2.5px white;
+    align-content: center;
+    background-color: transparent;
+    animation-name: diamond2;
+    animation-timing-function: ease-out;
+    animation-delay: .75s;
+}
+
+#diamond1::after {
+    content:"";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    align-content: center;
+    top:5px;
+    border: solid 2.5px white;
+    align-content: center;
+    background-color: transparent;
+    animation-name: diamond3;
+    animation-timing-function: ease-in-out;
+    animation-delay: .105s;
+}
+
+.Title2 {
+    text-align: left;
+    color: white;
+    font-size: 50pt;
+    width: 35%;
+    margin-top: 200px;
+    margin-left: 200px;
+    text-align: right;
+    width: 30%;
+    z-index: 1;
+    position:relative;
+    font-family: Blu Next,serif;
+
+}
+
+.Subtitle2 {
+    text-align:right;
+    color: white;
+    width: 18%;
+    margin-left: 450px;
+    z-index: 1;
+    
+}
+
+.getSorted {
+    text-align: center;
+    background-color:  #6B63B5;
+    height: 50px;
+    width: 300px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Sofia Pro', serif;
+    font-size: 14pt;
+    color: white;
+    letter-spacing: 1.5px;
+    padding: 1px 6px;
+    border-radius: 30px;
+    margin-left: 500px;
+}
+
